@@ -1,0 +1,275 @@
+<! DOCTYPE html>
+
+<!--**********************************************
+* Shreya Joshi                                   *   
+* ICS 4UR                                        *   
+* March 9, 2020                                  *   
+* This is the html for the match screen          *
+***********************************************-->
+
+<html>
+    <head>
+         <h1><center>INVESTINDER</center></h1>
+        <h3><center>Where Ideas Meet Success</center></h3>  
+        <title>INVESTINDER</title><img src="Investinder%20Logo.jpg" alt="InvestinderLogo" style="width:50px;height:50px;">
+       
+    <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>   
+    </head>
+<script src="CreatorScript.js"></script>
+    
+<body style="background-color: azure">
+    <center>
+      
+    <h5>Please select which ideas you like and dislike from the options below.
+       
+    </h5>
+  
+<br>
+    </center>
+        </body>
+
+<!--********This is where the company logo will go********--> 
+<head>
+<style>
+
+#box1{
+    position:relative;
+    float: inherit;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    align-self: center;
+    background-color: lightgray;
+    border-style: solid;
+    border-width: thin;
+}
+</style>
+</head>
+    
+    <br> 
+    
+
+<body>
+    <center>
+<div id="box1"><br> <br> <b>Company Logo</b></div>
+        </center>        
+</body>
+
+
+    <br>
+    <br>
+    <br>
+
+
+<!--********This is where the company information will go********--> 
+<head>
+<style>
+  #boxw{ 
+    position:relative;
+    float: inherit;
+    width: 500px;
+    align-items: center;
+    height: 150px;
+    margin: auto;
+    background-color: white;
+    border-style: solid;
+    border-width: medium;
+    text-decoration-color: deepskyblue;
+    }
+</style>
+</head>
+
+<body>
+    <center>
+<div id="boxw">
+
+    <body onload="start()">
+    <h3>Investment Option:</h3>
+    <div id="alldetails">
+    </div>
+    </body>
+    
+    </div>
+        </center>
+</body>
+
+<!--********These are the buttons for like, dislike and contact information********-->     
+    
+<body>
+    <center>
+   
+<style type="text/css">
+#dislike {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 40px;
+    text-decoration: none;
+    border: none;
+}
+#dislike:hover {
+ border: none;
+ background-color: darkred;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>    
+  
+        <BR>
+            <BR>
+    <button id="dislike">X</button>
+    
+    <style type="text/css">
+
+        </style> 
+
+   
+<style type="text/css">
+#contact {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: black;
+    font-family: 'ARIAL';
+    font-size: 15px;
+    text-decoration: none;
+    border: none;
+}
+#contact:hover {
+ border: none;
+ background-color: darkgrey;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>    
+   
+    <button id="contact">CONTACT</button>
+    
+<style type="text/css">
+
+        </style>
+
+<style>       
+#like {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 40px;
+    text-decoration: none;
+    border: none;
+}
+#like:hover {
+ border: none;
+ background-color: darkgreen;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>    
+   
+    <button id="like">♡</button>
+         </center></body>
+    
+  <br>
+    <br><br>
+
+<!--********These are the buttons to switch between the screens********-->  
+
+    <center>
+        <body>
+<style>       
+#profile {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 40px;
+    text-decoration: none;
+    border: none;
+}
+#profile:hover {
+ border: none;
+ background-color: darkgray;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>    
+   
+    <button id="profile">☺</button>
+
+            <style>        
+    
+#match {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'ARIAL';
+    font-size: 40px;
+    text-decoration: none;
+    border: none;
+}
+                
+#match:hover {
+ border: thin;
+ background-color: darkgray;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>   
+            <button id="match">MATCH</button>
+            
+<style>       
+#settings {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    padding: .5em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 40px;
+    text-decoration: none;
+    border: none;
+}
+#settings:hover {
+ border: none;
+ background-color: darkgray;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>    
+   
+    <button id="settings">⚙</button> 
+    
+    </center>
+</body>
+</html>
+    
